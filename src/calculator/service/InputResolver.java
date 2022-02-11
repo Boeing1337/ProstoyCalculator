@@ -6,9 +6,9 @@ import calculator.types.OperationType;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class InputFiller {
+public class InputResolver {
 
-    public Input resolveUserInput() {
+    public Input resolve() {
         BigDecimal a;
         BigDecimal b;
         OperationType operationType;

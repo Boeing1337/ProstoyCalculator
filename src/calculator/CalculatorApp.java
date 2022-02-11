@@ -1,7 +1,7 @@
 package calculator;
 
 import calculator.service.Calculator;
-import calculator.service.InputFiller;
+import calculator.service.InputResolver;
 
 public class CalculatorApp {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class CalculatorApp {
         while (true) {
             System.out.println(
                     "VASH OTVET: \n" +
-                            calculator.calculate(new InputFiller().resolveUserInput())
+                            calculator.calculate(new InputResolver().resolve())
             );
         }
     }
